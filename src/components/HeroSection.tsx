@@ -11,18 +11,18 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="pt-20 pb-16 bg-hero-gradient min-h-screen flex items-center relative overflow-hidden">
-      {/* Very Subtle Background Elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-primary rounded-full opacity-3 animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-24 h-24 bg-gradient-accent rounded-full opacity-2 animate-pulse-glow"></div>
+      {/* Reduced Opacity Background Elements */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-primary rounded-full opacity-1 animate-float"></div>
+      <div className="absolute bottom-20 right-10 w-24 h-24 bg-gradient-accent rounded-full opacity-1 animate-pulse-glow"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              {/* Cliniter Plus Clean Brand */}
-              <div className="inline-block mb-8">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-luxury font-bold cliniter-brand tracking-wide">
+              {/* Cliniter Plus High Contrast Brand */}
+              <div className="inline-block mb-8 relative">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-luxury font-extrabold cliniter-brand-readable tracking-wide">
                   CLINITER PLUS
                 </h2>
               </div>
