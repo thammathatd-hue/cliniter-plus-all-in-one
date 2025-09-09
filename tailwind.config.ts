@@ -88,6 +88,7 @@ export default {
         'card': 'var(--shadow-card)',
         'glow': 'var(--shadow-glow)',
         'premium': 'var(--shadow-premium)',
+        'excellence': 'var(--shadow-excellence)',
       },
       fontFamily: {
         'kanit': ['Kanit', 'system-ui', 'sans-serif'],
