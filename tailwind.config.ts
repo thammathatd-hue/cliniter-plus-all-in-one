@@ -76,6 +76,12 @@ export default {
         'gradient-card': 'var(--gradient-card)',
         'gradient-mesh': 'var(--gradient-mesh)',
         'gradient-dots': 'var(--gradient-dots)',
+        'gradient-medical': 'var(--gradient-medical)',
+        'gradient-medical-soft': 'var(--gradient-medical-soft)',
+        'gradient-health': 'var(--gradient-health)',
+        'gradient-clinic': 'var(--gradient-clinic)',
+        'gradient-professional': 'var(--gradient-professional)',
+        'gradient-clean': 'var(--gradient-clean)',
       },
       boxShadow: {
         'medical': 'var(--shadow-medical)',

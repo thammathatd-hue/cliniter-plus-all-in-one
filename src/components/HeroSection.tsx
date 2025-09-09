@@ -22,8 +22,16 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
+              {/* Cliniter Plus Brand */}
+              <div className="inline-block">
+                <div className="bg-gradient-primary text-white px-6 py-3 rounded-2xl shadow-glow border-2 border-primary/20">
+                  <h2 className="text-2xl md:text-3xl font-bold tracking-wide">
+                    CLINITER PLUS
+                  </h2>
+                </div>
+              </div>
+              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                <br />
                 <span className="text-3xl md:text-4xl lg:text-5xl">
                   ระบบคลินิกออนไลน์
                 </span>
