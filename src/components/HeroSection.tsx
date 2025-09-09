@@ -4,71 +4,67 @@ import heroDashboard from "@/assets/hero-dashboard.jpg";
 
 const HeroSection = () => {
   const trustIndicators = [
-    { icon: Users, text: "เชื่อถือจากแพทย์มืออาชีพ 100+ คลินิก" },
-    { icon: Clock, text: "สนับสนุนระบบ 24/7 โดยทีมแพทย์" },
-    { icon: BarChart3, text: "อัปเดตตามมาตรฐานการแพทย์" },
+    { icon: Users, text: "กว่า 100 คลินิกใช้งานจริง" },
+    { icon: Clock, text: "Support ทุกวัน 09:00–22:00" },
+    { icon: BarChart3, text: "อัปเดตระบบต่อเนื่อง" },
   ];
 
   return (
-    <section id="home" className="pt-20 pb-16 bg-hero-gradient min-h-screen flex items-center relative overflow-hidden">
-      {/* Reduced Opacity Background Elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-primary rounded-full opacity-1 animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-24 h-24 bg-gradient-accent rounded-full opacity-1 animate-pulse-glow"></div>
+    <section id="home" className="pt-20 pb-16 bg-gradient-subtle bg-mesh min-h-screen flex items-center relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 bg-animated-gradient"></div>
+      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-primary rounded-full opacity-20 animate-float"></div>
+      <div className="absolute bottom-20 right-10 w-24 h-24 bg-gradient-accent rounded-full opacity-15 animate-pulse-glow"></div>
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-hero rounded-lg rotate-45 opacity-10 animate-float" style={{ animationDelay: '2s' }}></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              {/* Cliniter Plus Medical Professional Brand */}
-              <div className="inline-block mb-8 relative">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-kanit font-extrabold cliniter-brand-readable tracking-wide">
-                  CLINITER PLUS
-                </h2>
-              </div>
-              
-              <h1 className="font-kanit font-bold text-foreground leading-tight mb-6">
-                <span className="text-medical-title bg-gradient-primary bg-clip-text text-transparent">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+                <br />
+                <span className="text-3xl md:text-4xl lg:text-5xl">
                   ระบบคลินิกออนไลน์
                 </span>
                 <br />
-                <span className="text-doctor-professional text-secondary">
-                  สำหรับแพทย์ผู้เชี่ยวชาญ
+                <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground">
+                  ครบ จบในที่เดียว
                 </span>
               </h1>
               
-              <p className="text-medical-body max-w-2xl leading-relaxed">
-                เพิ่มประสิทธิภาพการดูแลผู้ป่วย ลดงานเอกสาร เห็นรายได้แบบเรียลไทม์ 
-                <span className="text-high-contrast font-semibold text-primary">เชื่อถือได้จากแพทย์มืออาชีพกว่า 100 คลินิก</span>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-lg">
+                ลดงานซ้ำซ้อน เพิ่มประสิทธิภาพ เห็นรายได้แบบเรียลไทม์ 
+                <span className="text-secondary font-semibold">รองรับหลายสาขา</span>
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 pt-4">
-              <Button size="lg" variant="cta" className="premium-button text-lg px-12 py-6 font-kanit font-bold text-primary-foreground" asChild>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" variant="cta" className="text-lg px-8 py-4" asChild>
                 <a href="tel:099-264-4446">
-                  <Phone className="w-6 h-6 mr-3" />
-                  ปรึกษาฟรี สำหรับแพทย์
+                  <Phone className="w-5 h-5 mr-3" />
+                  ขอนัดเดโม่ฟรี
                 </a>
               </Button>
-              <Button size="lg" variant="secondary" className="premium-button text-lg px-12 py-6 font-kanit font-semibold" asChild>
+              <Button size="lg" variant="secondary" className="text-lg px-8 py-4" asChild>
                 <a href="https://lin.ee/rQIBIYa" target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-6 h-6 mr-3" />
-                  คุยกับที่ปรึกษาคลินิก
+                  <MessageCircle className="w-5 h-5 mr-3" />
+                  คุยกับทีมทาง LINE
                 </a>
               </Button>
             </div>
 
             {/* Trust Indicators */}
-            <div className="grid sm:grid-cols-3 gap-6 pt-12">
+            <div className="grid sm:grid-cols-3 gap-4 pt-8">
               {trustIndicators.map((item, index) => (
-                <div key={index} className="medical-professional-card flex items-center space-x-4 p-8">
+                <div key={index} className="flex items-center space-x-3 p-4 bg-card rounded-lg shadow-card border border-border/50">
                   <div className="flex-shrink-0">
-                    <div className="w-14 h-14 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow">
-                      <item.icon className="w-7 h-7 text-primary-foreground" />
+                    <div className="w-10 h-10 bg-primary-light rounded-full flex items-center justify-center">
+                      <item.icon className="w-5 h-5 text-primary" />
                     </div>
                   </div>
-                  <p className="text-medical-body font-medium text-high-contrast leading-snug">
+                  <p className="text-sm font-medium text-foreground leading-snug">
                     {item.text}
                   </p>
                 </div>
@@ -81,28 +77,23 @@ const HeroSection = () => {
             <div className="relative z-10">
               <img
                 src={heroDashboard}
-                alt="Cliniter Plus Dashboard - ระบบจัดการคลินิกออนไลน์ระดับพรีเมียม"
-                className="w-full h-auto rounded-3xl shadow-excellence border-4 border-primary/15 backdrop-blur-sm"
+                alt="Cliniter Plus Dashboard - ระบบจัดการคลินิกออนไลน์"
+                className="w-full h-auto rounded-2xl shadow-glow border border-border/20"
               />
             </div>
             
-            {/* Premium Floating Elements */}
-            <div className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-primary rounded-full opacity-15 animate-pulse shadow-glow"></div>
-            <div className="absolute -bottom-12 -left-12 w-40 h-40 bg-gradient-accent rounded-full opacity-12 animate-pulse shadow-luxury" style={{ animationDelay: '1s' }}></div>
+            {/* Floating Elements */}
+            <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-accent rounded-full opacity-20 animate-pulse"></div>
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-primary rounded-full opacity-10 animate-pulse" style={{ animationDelay: '1s' }}></div>
             
-            {/* Medical Professional Feature Badges */}
-            <div className="absolute top-8 right-8 medical-professional-card px-8 py-4 rounded-full shadow-excellence backdrop-blur-md">
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-primary" />
-                <span className="text-medical-body font-semibold text-high-contrast">มาตรฐานการแพทย์</span>
-              </div>
+            {/* Feature Badges */}
+            <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-4 py-2 rounded-full shadow-medical text-sm font-semibold">
+              <CheckCircle className="w-4 h-4 inline mr-2" />
+              รองรับหลายสาขา
             </div>
             
-            <div className="absolute bottom-8 left-8 medical-professional-card px-8 py-4 rounded-full shadow-premium backdrop-blur-md">
-              <div className="flex items-center space-x-3">
-                <span className="text-2xl">🏥</span>
-                <span className="text-medical-body font-medium text-high-contrast">ระบบมืออาชีพ สำหรับแพทย์</span>
-              </div>
+            <div className="absolute bottom-4 left-4 bg-card border border-border shadow-card px-4 py-2 rounded-full text-sm font-medium">
+              💡 ใช้งานง่าย ภายใน 1 วัน
             </div>
           </div>
         </div>

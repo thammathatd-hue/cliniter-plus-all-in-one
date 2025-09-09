@@ -65,10 +65,10 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="py-16 bg-white-clean relative overflow-hidden">
-      {/* Minimal background elements */}
-      <div className="absolute top-10 right-10 w-28 h-28 bg-gradient-primary rounded-full opacity-2 animate-float"></div>
-      <div className="absolute bottom-20 left-16 w-20 h-20 bg-gradient-secondary rounded-lg rotate-12 opacity-1 animate-pulse-glow"></div>
+    <section id="features" className="py-20 bg-gradient-section bg-dots relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-10 right-10 w-28 h-28 bg-gradient-primary rounded-full opacity-10 animate-float"></div>
+      <div className="absolute bottom-20 left-16 w-20 h-20 bg-gradient-accent rounded-lg rotate-12 opacity-15 animate-pulse-glow"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center space-y-6 mb-16">

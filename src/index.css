@@ -2,141 +2,135 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Cliniter Plus - Premium Medical CI Design System */
+/* Cliniter Plus - Medical Clinic Management System Design System */
 
 @layer base {
   :root {
-    /* Cliniter Plus Premium CI Colors - Based on Medical Excellence */
-    --background: 0 0% 99%;
-    --foreground: 240 25% 12%;
+    /* Cliniter Plus CI Colors - Professional Medical Purple-Blue Gradient */
+    --background: 0 0% 100%;
+    --foreground: 240 15% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 25% 12%;
+    --card-foreground: 240 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 25% 12%;
+    --popover-foreground: 240 15% 20%;
 
-    /* Premium Medical Purple - Primary Brand Color */
-    --primary: 260 85% 45%;
+    /* Primary Purple - From Cliniter Logo */
+    --primary: 270 60% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 260 85% 97%;
-    --primary-glow: 260 85% 65%;
+    --primary-light: 270 60% 97%;
+    --primary-glow: 270 60% 70%;
 
-    /* Professional Medical Blue - Secondary */
-    --secondary: 220 85% 50%;
+    /* Secondary Blue - From Cliniter Logo */
+    --secondary: 210 70% 50%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 220 85% 97%;
+    --secondary-light: 210 70% 97%;
 
-    /* Luxury Medical Gold - Accent */
-    --accent: 45 95% 55%;
-    --accent-foreground: 45 25% 8%;
-    --accent-light: 45 95% 96%;
+    /* Accent Purple for CTAs - Deeper Purple */
+    --accent: 260 70% 45%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 260 70% 96%;
 
-    --muted: 240 15% 97%;
-    --muted-foreground: 240 20% 40%;
+    --muted: 270 30% 98%;
+    --muted-foreground: 240 15% 55%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 20% 88%;
-    --input: 240 20% 88%;
-    --ring: 260 85% 45%;
+    --border: 270 25% 92%;
+    --input: 270 25% 92%;
+    --ring: 270 60% 55%;
 
     --radius: 0.75rem;
 
-    /* Premium Medical Enhancement Colors */
-    --medical-navy: 225 30% 15%;
-    --medical-teal: 185 85% 35%;
-    --medical-emerald: 155 85% 35%;
-    --medical-sapphire: 220 85% 45%;
-    --medical-platinum: 240 10% 92%;
-    --medical-pearl: 45 30% 97%;
-    --medical-onyx: 240 25% 10%;
-    --medical-diamond: 0 0% 98%;
-
-    /* Cliniter Plus Premium Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--medical-sapphire)));
+    /* Cliniter Plus Gradients - Enhanced Visual Appeal */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)));
-    --gradient-subtle: linear-gradient(135deg, hsl(var(--medical-diamond)) 0%, hsl(var(--medical-pearl)) 100%);
-    --gradient-section: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--medical-platinum)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--medical-pearl)) 100%);
-    
-    /* Premium Professional Gradients */
-    --gradient-luxury: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--medical-sapphire)));
-    --gradient-excellence: linear-gradient(180deg, hsl(var(--primary) / 0.05), hsl(var(--secondary) / 0.03));
-    --gradient-premium: linear-gradient(135deg, hsl(var(--medical-navy)), hsl(var(--primary)));
-    --gradient-elite: linear-gradient(45deg, hsl(var(--primary) / 0.95), hsl(var(--accent) / 0.9));
-    --gradient-professional: linear-gradient(135deg, hsl(var(--medical-onyx)), hsl(var(--medical-navy)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(260 70% 60%));
+    --gradient-subtle: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 50%, hsl(var(--primary-light)) 100%);
+    --gradient-section: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    --gradient-mesh: radial-gradient(ellipse at top, hsl(var(--primary) / 0.1) 0%, transparent 50%), 
+                     radial-gradient(ellipse at bottom, hsl(var(--secondary) / 0.1) 0%, transparent 50%);
+    --gradient-dots: radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.15) 1px, transparent 0);
 
-    /* Premium Medical Shadows */
-    --shadow-luxury: 0 8px 32px -8px hsl(var(--primary) / 0.25);
-    --shadow-card: 0 4px 20px -4px hsl(var(--medical-onyx) / 0.12);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
-    --shadow-premium: 0 16px 64px -16px hsl(var(--medical-navy) / 0.3);
-    --shadow-excellence: 0 12px 48px -12px hsl(var(--accent) / 0.2);
+    /* Medical Shadows */
+    --shadow-medical: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 2px 10px -2px hsl(var(--foreground) / 0.1);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.3);
 
-    /* Premium Typography & Transitions */
-    --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-excellence: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Smooth Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
+
     --sidebar-foreground: 240 5.3% 26.1%;
+
     --sidebar-primary: 240 5.9% 10%;
+
     --sidebar-primary-foreground: 0 0% 98%;
+
     --sidebar-accent: 240 4.8% 95.9%;
+
     --sidebar-accent-foreground: 240 5.9% 10%;
+
     --sidebar-border: 220 13% 91%;
+
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 240 25% 4%;
-    --foreground: 0 0% 98%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 240 25% 4%;
-    --card-foreground: 0 0% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 240 25% 4%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 260 85% 65%;
-    --primary-foreground: 240 25% 8%;
-    --primary-light: 260 85% 15%;
-    --primary-glow: 260 85% 80%;
+    --primary: 270 60% 65%;
+    --primary-foreground: 240 15% 10%;
+    --primary-light: 270 60% 15%;
+    --primary-glow: 270 60% 80%;
 
-    --secondary: 220 85% 60%;
-    --secondary-foreground: 240 25% 8%;
-    --secondary-light: 220 85% 12%;
+    --secondary: 210 70% 60%;
+    --secondary-foreground: 240 15% 10%;
+    --secondary-light: 210 70% 12%;
 
-    --accent: 45 95% 65%;
-    --accent-foreground: 45 25% 8%;
-    --accent-light: 45 95% 12%;
+    --accent: 260 70% 55%;
+    --accent-foreground: 240 15% 10%;
+    --accent-light: 260 70% 12%;
 
-    --muted: 240 25% 12%;
-    --muted-foreground: 240 15% 70%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 240 25% 18%;
-    --input: 240 25% 18%;
-    --ring: 260 85% 65%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
 
-    /* Dark mode premium gradients */
+    /* Dark mode gradients - Enhanced Visual Appeal */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)));
-    --gradient-subtle: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(260 70% 65%));
+    --gradient-subtle: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 50%, hsl(var(--primary-light)) 100%);
     --gradient-section: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    --gradient-mesh: radial-gradient(ellipse at top, hsl(var(--primary) / 0.2) 0%, transparent 50%), 
+                     radial-gradient(ellipse at bottom, hsl(var(--secondary) / 0.2) 0%, transparent 50%);
+    --gradient-dots: radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.25) 1px, transparent 0);
 
     /* Dark mode shadows */
-    --shadow-luxury: 0 8px 32px -8px hsl(var(--primary) / 0.4);
-    --shadow-card: 0 4px 20px -4px hsl(var(--foreground) / 0.25);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.6);
-    --shadow-premium: 0 16px 64px -16px hsl(var(--primary) / 0.5);
-    --shadow-excellence: 0 12px 48px -12px hsl(var(--accent) / 0.3);
+    --shadow-medical: 0 4px 20px -4px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 2px 10px -2px hsl(var(--foreground) / 0.2);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.5);
   }
 }
 
@@ -146,150 +140,33 @@
   }
 
   body {
-    @apply bg-gradient-subtle text-foreground font-kanit;
+    @apply bg-gradient-subtle text-foreground font-thai;
     background-attachment: fixed;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  /* Medical Professional Typography for Healthcare */
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-kanit text-foreground;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.025em;
-  }
-
-  p, span, div {
-    @apply text-foreground font-kanit;
-    line-height: 1.7;
-  }
-
-  /* Enhanced Medical Professional Classes */
-  .text-high-contrast {
-    color: hsl(var(--foreground));
-    font-weight: 500;
-    font-family: 'Kanit', system-ui, sans-serif;
-  }
-
-  .text-medical-title {
-    @apply font-kanit font-bold text-2xl md:text-3xl lg:text-4xl;
-    color: hsl(var(--primary));
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-  }
-
-  .text-medical-subtitle {
-    @apply font-kanit font-medium text-lg md:text-xl;
-    color: hsl(var(--muted-foreground));
-    line-height: 1.5;
-  }
-
-  .text-medical-body {
-    @apply font-kanit text-base md:text-lg;
-    color: hsl(var(--foreground));
-    line-height: 1.7;
-  }
-
-  .text-doctor-professional {
-    @apply font-kanit font-semibold text-lg md:text-xl;
-    color: hsl(var(--primary));
-    line-height: 1.4;
   }
   
   .scroll-smooth {
     scroll-behavior: smooth;
   }
 
-  /* Cliniter Plus Medical Professional Design Elements */
-  .cliniter-brand {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 0 40px hsl(var(--primary) / 0.3);
-    filter: drop-shadow(0 4px 8px hsl(var(--medical-onyx) / 0.5));
-    font-family: 'Kanit', system-ui, sans-serif;
+  /* Background Patterns */
+  .bg-dots {
+    background-image: var(--gradient-dots);
+    background-size: 20px 20px;
   }
 
-  .cliniter-brand-readable {
-    color: hsl(var(--foreground));
-    text-shadow: 
-      0 0 20px hsl(var(--background)),
-      0 0 40px hsl(var(--background)),
-      0 4px 8px hsl(var(--medical-onyx) / 0.3),
-      2px 2px 0px hsl(var(--background)),
-      -2px -2px 0px hsl(var(--background)),
-      2px -2px 0px hsl(var(--background)),
-      -2px 2px 0px hsl(var(--background));
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    font-family: 'Kanit', system-ui, sans-serif;
+  .bg-mesh {
+    background-image: var(--gradient-mesh);
   }
 
-  .medical-card {
-    @apply bg-card border-2 border-primary/10 rounded-2xl shadow-luxury;
-    backdrop-filter: blur(8px);
-    background: linear-gradient(145deg, hsl(var(--card)), hsl(var(--medical-pearl)));
+  .bg-animated-gradient {
+    background: linear-gradient(-45deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.1), hsl(var(--accent) / 0.1), hsl(var(--primary-glow) / 0.1));
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
   }
 
-  .medical-professional-card {
-    @apply bg-card border-2 border-primary/15 rounded-3xl shadow-excellence;
-    backdrop-filter: blur(12px);
-    background: linear-gradient(145deg, hsl(var(--card)), hsl(var(--medical-pearl)));
-    transition: var(--transition-luxury);
-  }
-
-  .medical-professional-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-premium);
-    border-color: hsl(var(--primary) / 0.3);
-  }
-
-  .premium-button {
-    @apply shadow-luxury hover:shadow-glow font-kanit;
-    transition: var(--transition-luxury);
-    transform-origin: center;
-  }
-
-  .premium-button:hover {
-    transform: translateY(-2px) scale(1.02);
-  }
-
-  .doctor-badge {
-    @apply bg-gradient-primary text-primary-foreground px-6 py-3 rounded-full font-kanit font-semibold;
-    box-shadow: var(--shadow-luxury);
-    backdrop-filter: blur(8px);
-  }
-
-  /* Luxury Clean Backgrounds with High Contrast */
-  .bg-hero-gradient {
-    background: linear-gradient(135deg, 
-      hsl(var(--medical-diamond)) 0%, 
-      hsl(var(--medical-pearl)) 50%, 
-      hsl(var(--background)) 100%);
-  }
-
-  .bg-section-clean {
-    background-color: hsl(var(--medical-platinum));
-  }
-
-  .bg-pricing-pattern {
-    background: linear-gradient(135deg, 
-      hsl(var(--medical-pearl)) 0%, 
-      hsl(var(--background)) 50%, 
-      hsl(var(--medical-pearl)) 100%);
-  }
-
-  .bg-white-clean {
-    background-color: hsl(var(--background));
-  }
-
-  .bg-testimonial-clean {
-    background: linear-gradient(180deg, 
-      hsl(var(--background)) 0%, 
-      hsl(var(--medical-pearl)) 50%, 
-      hsl(var(--background)) 100%);
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 }
