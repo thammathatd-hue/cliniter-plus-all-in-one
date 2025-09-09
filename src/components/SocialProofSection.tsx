@@ -1,4 +1,7 @@
 import { Badge } from "@/components/ui/badge";
+import clinicThanananLogo from "@/assets/clinic-thananan-logo.png";
+import clinicPrasitEntLogo from "@/assets/clinic-prasit-ent-logo.png";
+import rebornDoctorBondLogo from "@/assets/reborn-doctor-bond-logo.png";
 
 const SocialProofSection = () => {
   const clinics = [
@@ -23,16 +26,16 @@ const SocialProofSection = () => {
       logo: "/lovable-uploads/6c576d4e-c755-4f2b-9710-de95af2da347.png"
     },
     {
-      name: "คลินิกแฟมิลี่",
-      logo: null
+      name: "คลินิก พญ.ธนนันท์",
+      logo: clinicThanananLogo
     },
     {
-      name: "คลินิกเฮลท์แคร์",
-      logo: null
+      name: "คลินิก หู คอ จมูก หมอประสิทธิ์",
+      logo: clinicPrasitEntLogo
     },
     {
-      name: "คลินิกเวลล์เนส",
-      logo: null
+      name: "รีบอร์นบายดอกเตอร์บอนด์",
+      logo: rebornDoctorBondLogo
     }
   ];
 
