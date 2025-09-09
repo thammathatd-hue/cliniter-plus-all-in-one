@@ -166,56 +166,36 @@
     scroll-behavior: smooth;
   }
 
-  /* Background Patterns */
-  .bg-dots {
-    background-image: var(--gradient-dots);
-    background-size: 20px 20px;
-  }
-
-  .bg-mesh {
-    background-image: var(--gradient-mesh);
-  }
-
-  .bg-animated-gradient {
-    background: linear-gradient(-45deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.1), hsl(var(--accent) / 0.1), hsl(var(--primary-glow) / 0.1));
-    background-size: 400% 400%;
-    animation: gradient-shift 15s ease infinite;
-  }
-
-  @keyframes gradient-shift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  /* Medical patterns for professional appeal */
-  .bg-medical-pattern {
+  /* Clean Background Patterns - Inspired by Cliniter Reference Design */
+  .bg-clean-grid {
+    background-color: hsl(var(--background));
     background-image: 
-      radial-gradient(circle at 25% 25%, hsl(var(--medical-blue) / 0.08) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, hsl(var(--medical-teal) / 0.06) 0%, transparent 50%);
-  }
-
-  .bg-clinic-dots {
-    background-image: 
-      radial-gradient(circle at 20px 20px, hsl(var(--medical-blue) / 0.12) 2px, transparent 2px);
+      linear-gradient(hsl(var(--border) / 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.3) 1px, transparent 1px);
     background-size: 40px 40px;
   }
 
-  .bg-medical-mesh {
+  .bg-subtle-dots {
+    background-color: hsl(var(--background));
     background-image: 
-      linear-gradient(45deg, hsl(var(--medical-blue) / 0.03) 25%, transparent 25%),
-      linear-gradient(-45deg, hsl(var(--medical-teal) / 0.03) 25%, transparent 25%),
-      linear-gradient(45deg, transparent 75%, hsl(var(--medical-green) / 0.02) 75%),
-      linear-gradient(-45deg, transparent 75%, hsl(var(--medical-purple) / 0.02) 75%);
-    background-size: 60px 60px;
+      radial-gradient(circle at 20px 20px, hsl(var(--primary) / 0.08) 2px, transparent 2px);
+    background-size: 40px 40px;
   }
 
-  .bg-professional-clean {
-    background: var(--gradient-clean);
+  .bg-hero-gradient {
+    background: linear-gradient(135deg, 
+      hsl(var(--primary) / 0.05) 0%, 
+      hsl(var(--background)) 30%, 
+      hsl(var(--secondary) / 0.03) 70%, 
+      hsl(var(--background)) 100%);
+  }
+
+  .bg-section-clean {
+    background-color: hsl(var(--muted) / 0.3);
     position: relative;
   }
 
-  .bg-professional-clean::before {
+  .bg-section-clean::before {
     content: '';
     position: absolute;
     top: 0;
@@ -223,8 +203,33 @@
     right: 0;
     bottom: 0;
     background-image: 
-      radial-gradient(circle at 30% 20%, hsl(var(--medical-blue) / 0.05) 0%, transparent 30%),
-      radial-gradient(circle at 70% 80%, hsl(var(--medical-teal) / 0.04) 0%, transparent 30%);
+      radial-gradient(circle at 20% 30%, hsl(var(--primary) / 0.02) 0%, transparent 40%),
+      radial-gradient(circle at 80% 70%, hsl(var(--secondary) / 0.02) 0%, transparent 40%);
     pointer-events: none;
+  }
+
+  .bg-pricing-pattern {
+    background: linear-gradient(135deg, 
+      hsl(var(--primary) / 0.08) 0%, 
+      hsl(var(--background)) 25%, 
+      hsl(var(--background)) 75%, 
+      hsl(var(--secondary) / 0.06) 100%);
+    background-image: 
+      linear-gradient(45deg, hsl(var(--primary) / 0.03) 25%, transparent 25%),
+      linear-gradient(-45deg, hsl(var(--primary) / 0.03) 25%, transparent 25%);
+    background-size: 60px 60px;
+  }
+
+  .bg-white-clean {
+    background-color: hsl(var(--background));
+    border-top: 1px solid hsl(var(--border) / 0.5);
+    border-bottom: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .bg-testimonial-clean {
+    background: linear-gradient(180deg, 
+      hsl(var(--background)) 0%, 
+      hsl(var(--muted) / 0.2) 50%, 
+      hsl(var(--background)) 100%);
   }
 }

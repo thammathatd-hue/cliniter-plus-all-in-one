@@ -40,11 +40,10 @@ const SocialProofSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-professional-clean bg-clinic-dots relative overflow-hidden">
-      {/* Professional medical decorative elements */}
-      <div className="absolute top-12 left-10 w-24 h-24 bg-gradient-medical rounded-full opacity-20 animate-float"></div>
-      <div className="absolute bottom-16 right-16 w-32 h-32 bg-gradient-health rounded-lg rotate-12 opacity-15 animate-pulse-glow"></div>
-      <div className="absolute top-1/3 left-1/3 w-20 h-20 bg-gradient-clinic rounded-full opacity-10 animate-float" style={{ animationDelay: '3s' }}></div>
+    <section className="py-16 bg-white-clean relative overflow-hidden">
+      {/* Subtle decorative elements */}
+      <div className="absolute top-12 left-10 w-24 h-24 bg-gradient-primary rounded-full opacity-5 animate-float"></div>
+      <div className="absolute bottom-16 right-16 w-32 h-32 bg-gradient-secondary rounded-lg rotate-12 opacity-4 animate-pulse-glow"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center space-y-8">

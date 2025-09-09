@@ -65,11 +65,10 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-clean bg-medical-pattern relative overflow-hidden">
-      {/* Medical professional decorative elements */}
-      <div className="absolute top-16 right-20 w-36 h-36 bg-gradient-medical rounded-full opacity-20 animate-float" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute bottom-24 left-8 w-28 h-28 bg-gradient-health rounded-lg rotate-12 opacity-25 animate-pulse-glow"></div>
-      <div className="absolute top-1/4 left-1/4 w-24 h-24 bg-gradient-clinic rounded-full opacity-15 animate-float" style={{ animationDelay: '0.5s' }}></div>
+    <section className="py-16 bg-section-clean relative overflow-hidden">
+      {/* Minimal decorative elements */}
+      <div className="absolute top-16 right-20 w-36 h-36 bg-gradient-primary rounded-full opacity-5 animate-float" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute bottom-24 left-8 w-28 h-28 bg-gradient-secondary rounded-lg rotate-12 opacity-4 animate-pulse-glow"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">

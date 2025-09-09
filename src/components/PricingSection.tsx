@@ -84,12 +84,10 @@ const PricingSection = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-gradient-professional bg-medical-mesh relative overflow-hidden">
-      {/* Professional medical animated background elements */}
-      <div className="absolute inset-0 bg-animated-gradient opacity-30"></div>
-      <div className="absolute top-40 left-8 w-24 h-24 bg-gradient-health rounded-full opacity-25 animate-float"></div>
-      <div className="absolute bottom-32 right-12 w-32 h-32 bg-gradient-clinic rounded-lg rotate-45 opacity-20 animate-pulse-glow"></div>
-      <div className="absolute top-20 right-20 w-18 h-18 bg-gradient-medical rounded-full opacity-15 animate-float" style={{ animationDelay: '1.5s' }}></div>
+    <section id="pricing" className="py-16 bg-pricing-pattern relative overflow-hidden">
+      {/* Clean background elements */}
+      <div className="absolute top-40 left-8 w-24 h-24 bg-gradient-primary rounded-full opacity-8 animate-float"></div>
+      <div className="absolute bottom-32 right-12 w-32 h-32 bg-gradient-secondary rounded-lg rotate-45 opacity-6 animate-pulse-glow"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">

@@ -65,11 +65,10 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-gradient-medical-soft bg-medical-pattern relative overflow-hidden">
-      {/* Medical-themed background decorative elements */}
-      <div className="absolute top-10 right-10 w-28 h-28 bg-gradient-health rounded-full opacity-20 animate-float"></div>
-      <div className="absolute bottom-20 left-16 w-20 h-20 bg-gradient-clinic rounded-lg rotate-12 opacity-25 animate-pulse-glow"></div>
-      <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-gradient-medical rounded-full opacity-15 animate-float" style={{ animationDelay: '2s' }}></div>
+    <section id="features" className="py-16 bg-white-clean relative overflow-hidden">
+      {/* Subtle background elements */}
+      <div className="absolute top-10 right-10 w-28 h-28 bg-gradient-primary rounded-full opacity-6 animate-float"></div>
+      <div className="absolute bottom-20 left-16 w-20 h-20 bg-gradient-secondary rounded-lg rotate-12 opacity-5 animate-pulse-glow"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center space-y-6 mb-16">

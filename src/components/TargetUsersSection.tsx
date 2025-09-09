@@ -73,10 +73,10 @@ const TargetUsersSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-section bg-dots relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute top-20 right-12 w-40 h-40 bg-gradient-hero rounded-full opacity-10 animate-float" style={{ animationDelay: '1.5s' }}></div>
-      <div className="absolute bottom-32 left-20 w-28 h-28 bg-gradient-accent rounded-lg rotate-45 opacity-15 animate-pulse-glow"></div>
+    <section className="py-16 bg-white-clean relative overflow-hidden">
+      {/* Subtle background elements */}
+      <div className="absolute top-20 right-12 w-40 h-40 bg-gradient-primary rounded-full opacity-4 animate-float" style={{ animationDelay: '1.5s' }}></div>
+      <div className="absolute bottom-32 left-20 w-28 h-28 bg-gradient-secondary rounded-lg rotate-45 opacity-3 animate-pulse-glow"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">

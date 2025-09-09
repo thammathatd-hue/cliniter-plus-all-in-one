@@ -93,11 +93,10 @@ const ReviewsSection = () => {
   ];
 
   return (
-    <section id="reviews" className="py-20 bg-gradient-subtle bg-mesh relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 bg-animated-gradient opacity-30"></div>
-      <div className="absolute top-32 right-16 w-32 h-32 bg-gradient-primary rounded-full opacity-15 animate-float"></div>
-      <div className="absolute bottom-40 left-12 w-28 h-28 bg-gradient-accent rounded-lg rotate-12 opacity-10 animate-pulse-glow"></div>
+    <section id="reviews" className="py-16 bg-testimonial-clean relative overflow-hidden">
+      {/* Clean background elements */}
+      <div className="absolute top-32 right-16 w-32 h-32 bg-gradient-primary rounded-full opacity-6 animate-float"></div>
+      <div className="absolute bottom-40 left-12 w-28 h-28 bg-gradient-secondary rounded-lg rotate-12 opacity-4 animate-pulse-glow"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
