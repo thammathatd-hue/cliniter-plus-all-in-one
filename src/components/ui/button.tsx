@@ -11,12 +11,12 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-medical transition-smooth",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border-2 border-white/30 bg-white/10 text-white hover:bg-white hover:text-primary backdrop-blur-sm transition-smooth font-semibold",
+        outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground shadow-card transition-smooth font-semibold",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-card transition-smooth",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cta: "bg-gradient-accent text-accent-foreground hover:shadow-glow transform hover:scale-105 transition-bounce font-semibold",
-        hero: "bg-gradient-primary text-primary-foreground hover:shadow-glow transform hover:scale-105 transition-bounce font-semibold shadow-medical",
+        cta: "bg-gradient-accent text-white hover:shadow-glow transform hover:scale-105 transition-bounce font-semibold shadow-medical",
+        hero: "bg-gradient-primary text-white hover:shadow-glow transform hover:scale-105 transition-bounce font-semibold shadow-medical",
         medical: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-medical transition-smooth",
       },
       size: {
