@@ -72,6 +72,10 @@ export default {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-accent': 'var(--gradient-accent)',
         'gradient-subtle': 'var(--gradient-subtle)',
+        'gradient-section': 'var(--gradient-section)',
+        'gradient-card': 'var(--gradient-card)',
+        'gradient-mesh': 'var(--gradient-mesh)',
+        'gradient-dots': 'var(--gradient-dots)',
       },
       boxShadow: {
         'medical': 'var(--shadow-medical)',

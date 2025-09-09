@@ -84,8 +84,13 @@ const PricingSection = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="pricing" className="py-20 bg-gradient-subtle bg-mesh relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 bg-animated-gradient opacity-50"></div>
+      <div className="absolute top-40 left-8 w-24 h-24 bg-gradient-accent rounded-full opacity-20 animate-float"></div>
+      <div className="absolute bottom-32 right-12 w-32 h-32 bg-gradient-primary rounded-lg rotate-45 opacity-15 animate-pulse-glow"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">

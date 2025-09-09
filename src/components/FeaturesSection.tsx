@@ -65,8 +65,12 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="features" className="py-20 bg-gradient-section bg-dots relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-10 right-10 w-28 h-28 bg-gradient-primary rounded-full opacity-10 animate-float"></div>
+      <div className="absolute bottom-20 left-16 w-20 h-20 bg-gradient-accent rounded-lg rotate-12 opacity-15 animate-pulse-glow"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center space-y-6 mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             <span className="bg-gradient-primary bg-clip-text text-transparent">

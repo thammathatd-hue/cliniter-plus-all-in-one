@@ -10,8 +10,14 @@ const HeroSection = () => {
   ];
 
   return (
-    <section id="home" className="pt-20 pb-16 bg-gradient-subtle min-h-screen flex items-center">
-      <div className="container mx-auto px-4">
+    <section id="home" className="pt-20 pb-16 bg-gradient-subtle bg-mesh min-h-screen flex items-center relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 bg-animated-gradient"></div>
+      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-primary rounded-full opacity-20 animate-float"></div>
+      <div className="absolute bottom-20 right-10 w-24 h-24 bg-gradient-accent rounded-full opacity-15 animate-pulse-glow"></div>
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-hero rounded-lg rotate-45 opacity-10 animate-float" style={{ animationDelay: '2s' }}></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">

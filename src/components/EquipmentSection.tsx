@@ -115,8 +115,13 @@ const EquipmentSection = () => {
   ];
 
   return (
-    <section id="equipment" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4">
+    <section id="equipment" className="py-20 bg-gradient-section bg-dots relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-24 left-12 w-36 h-36 bg-gradient-primary rounded-full opacity-10 animate-float"></div>
+      <div className="absolute bottom-28 right-20 w-24 h-24 bg-gradient-accent rounded-lg rotate-45 opacity-15 animate-pulse-glow"></div>
+      <div className="absolute top-1/2 left-8 w-20 h-20 bg-gradient-hero rounded-full opacity-10 animate-float" style={{ animationDelay: '2s' }}></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
