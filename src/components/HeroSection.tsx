@@ -20,13 +20,11 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              {/* Cliniter Plus Premium Brand */}
+              {/* Cliniter Plus Clean Brand */}
               <div className="inline-block mb-8">
-                <div className="bg-gradient-primary text-primary-foreground px-10 py-5 rounded-2xl shadow-excellence border-2 border-primary/20 backdrop-blur-sm">
-                  <h2 className="text-3xl md:text-4xl font-luxury font-bold tracking-wide cliniter-brand">
-                    CLINITER PLUS
-                  </h2>
-                </div>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-luxury font-bold cliniter-brand tracking-wide">
+                  CLINITER PLUS
+                </h2>
               </div>
               
               <h1 className="font-luxury font-bold text-foreground leading-tight mb-6">
