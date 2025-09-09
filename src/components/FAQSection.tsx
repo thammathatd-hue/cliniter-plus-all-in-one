@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, ChevronUp, HelpCircle, Shield, Smartphone, Clock, Globe, CreditCard } from "lucide-react";
+import { ChevronDown, ChevronUp, HelpCircle, Shield, Smartphone, Clock, Globe, CreditCard, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const FAQSection = () => {
@@ -133,8 +133,9 @@ const FAQSection = () => {
                   คุยกับ Expert
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-4" asChild>
+              <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-2 border-primary bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground font-semibold" asChild>
                 <a href="https://lin.ee/rQIBIYa" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5 mr-2" />
                   คุยกับทีมทาง LINE
                 </a>
               </Button>

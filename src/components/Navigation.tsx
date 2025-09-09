@@ -43,13 +43,17 @@ const Navigation = () => {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" size="sm" className="text-sm">
-              <MessageCircle className="w-4 h-4 mr-2" />
-              คุยกับทีม LINE
+            <Button variant="outline" size="sm" className="text-sm border-2 border-primary bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground font-semibold" asChild>
+              <a href="https://lin.ee/rQIBIYa" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" />
+                คุยกับทีม LINE
+              </a>
             </Button>
-            <Button variant="cta" size="sm" className="text-sm">
-              <Phone className="w-4 h-4 mr-2" />
-              ขอนัดเดโม่
+            <Button variant="cta" size="sm" className="text-sm" asChild>
+              <a href="tel:099-264-4446">
+                <Phone className="w-4 h-4 mr-2" />
+                ขอนัดเดโม่
+              </a>
             </Button>
           </div>
 
@@ -80,13 +84,17 @@ const Navigation = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 px-3 pt-4">
-                <Button variant="outline" size="sm" className="w-full">
-                  <MessageCircle className="w-4 h-4 mr-2" />
-                  คุยกับทีม LINE
+                <Button variant="outline" size="sm" className="w-full border-2 border-primary bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground font-semibold" asChild>
+                  <a href="https://lin.ee/rQIBIYa" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    คุยกับทีม LINE
+                  </a>
                 </Button>
-                <Button variant="cta" size="sm" className="w-full">
-                  <Phone className="w-4 h-4 mr-2" />
-                  ขอนัดเดโม่
+                <Button variant="cta" size="sm" className="w-full" asChild>
+                  <a href="tel:099-264-4446">
+                    <Phone className="w-4 h-4 mr-2" />
+                    ขอนัดเดโม่
+                  </a>
                 </Button>
               </div>
             </div>
