@@ -23,6 +23,9 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+                <span className="text-5xl md:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                  CLINITER PLUS
+                </span>
                 <br />
                 <span className="text-3xl md:text-4xl lg:text-5xl">
                   ระบบคลินิกออนไลน์
