@@ -198,9 +198,11 @@ const BenefitsSection = () => {
               <p className="text-muted-foreground mb-6">
                 ดูการเปลี่ยนแปลงที่เกิดขึ้นกับคลินิกของคุณ ด้วยการนัดเดโม่ฟรี
               </p>
-              <Button size="lg" variant="hero" className="w-full text-lg py-4">
-                ขอนัดเดโม่เพื่อดูผลลัพธ์
-                <ArrowRight className="w-5 h-5 ml-2" />
+              <Button size="lg" variant="hero" className="w-full text-lg py-4" asChild>
+                <a href="tel:099-264-4446">
+                  ขอนัดเดโม่เพื่อดูผลลัพธ์
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
               </Button>
             </div>
           </div>

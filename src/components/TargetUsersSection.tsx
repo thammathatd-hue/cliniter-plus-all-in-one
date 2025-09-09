@@ -166,8 +166,10 @@ const TargetUsersSection = () => {
             <p className="text-muted-foreground mb-6">
               Cliniter Plus ช่วยให้ทุกคนทำงานได้เร็วขึ้น ผิดพลาดน้อยลง และมีความสุขกับการทำงานมากขึ้น
             </p>
-            <Button size="lg" variant="hero" className="text-lg px-8 py-4">
-              ลองใช้ฟรี 30 วัน
+            <Button size="lg" variant="hero" className="text-lg px-8 py-4" asChild>
+              <a href="tel:099-264-4446">
+                ลองใช้ฟรี 30 วัน
+              </a>
             </Button>
           </div>
         </div>

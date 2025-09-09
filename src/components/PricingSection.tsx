@@ -168,9 +168,12 @@ const PricingSection = () => {
                 size="lg" 
                 variant={pkg.buttonVariant}
                 className={`w-full text-lg py-4 ${pkg.name === 'More' ? 'bg-white text-primary hover:bg-white/90' : ''}`}
+                asChild
               >
-                <Phone className="w-5 h-5 mr-2" />
-                ขอนัดเดโม่ {pkg.name}
+                <a href="tel:099-264-4446">
+                  <Phone className="w-5 h-5 mr-2" />
+                  ขอนัดเดโม่ {pkg.name}
+                </a>
               </Button>
             </div>
           ))}
@@ -206,9 +209,11 @@ const PricingSection = () => {
             <p className="text-muted-foreground mb-6">
               ทดลองใช้ 30 วันฟรี หากไม่พอใจ เราคืนเงิน 100% ไม่ถามคำถาม
             </p>
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
-              เริ่มทดลองใช้ฟรี 30 วัน
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-4" asChild>
+              <a href="tel:099-264-4446">
+                เริ่มทดลองใช้ฟรี 30 วัน
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </a>
             </Button>
           </div>
         </div>

@@ -42,13 +42,17 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" variant="cta" className="text-lg px-8 py-4">
-                <Phone className="w-5 h-5 mr-3" />
-                ขอนัดเดโม่ฟรี
+              <Button size="lg" variant="cta" className="text-lg px-8 py-4" asChild>
+                <a href="tel:099-264-4446">
+                  <Phone className="w-5 h-5 mr-3" />
+                  ขอนัดเดโม่ฟรี
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-4">
-                <MessageCircle className="w-5 h-5 mr-3" />
-                คุยกับทีมทาง LINE
+              <Button size="lg" variant="outline" className="text-lg px-8 py-4" asChild>
+                <a href="https://lin.ee/rQIBIYa" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5 mr-3" />
+                  คุยกับทีมทาง LINE
+                </a>
               </Button>
             </div>
 

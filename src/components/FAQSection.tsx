@@ -128,11 +128,15 @@ const FAQSection = () => {
               ทีมงานมืออาชีพพร้อมตอบทุกคำถาม และให้คำปรึกษาฟรี
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="cta" className="text-lg px-8 py-4">
-                คุยกับ Expert
+              <Button size="lg" variant="cta" className="text-lg px-8 py-4" asChild>
+                <a href="tel:099-264-4446">
+                  คุยกับ Expert
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-4">
-                ส่งคำถามทาง Email
+              <Button size="lg" variant="outline" className="text-lg px-8 py-4" asChild>
+                <a href="https://lin.ee/rQIBIYa" target="_blank" rel="noopener noreferrer">
+                  คุยกับทีมทาง LINE
+                </a>
               </Button>
             </div>
           </div>

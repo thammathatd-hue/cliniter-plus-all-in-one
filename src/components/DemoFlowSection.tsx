@@ -1,4 +1,4 @@
-import { Play, UserPlus, Calendar, Stethoscope, CreditCard, BarChart3, ArrowRight } from "lucide-react";
+import { Play, UserPlus, Calendar, Stethoscope, CreditCard, BarChart3, ArrowRight, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const DemoFlowSection = () => {
@@ -149,12 +149,17 @@ const DemoFlowSection = () => {
               จากการใช้งานจริงของคลินิกต่าง ๆ พบว่าสามารถลดเวลาการทำงานและเพิ่มความแม่นยำได้อย่างมาก
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="cta" className="text-lg px-8 py-4">
-                <Play className="w-5 h-5 mr-2" />
-                ขอนัดเดโม่สด
+              <Button size="lg" variant="cta" className="text-lg px-8 py-4" asChild>
+                <a href="tel:099-264-4446">
+                  <Play className="w-5 h-5 mr-2" />
+                  ขอนัดเดโม่สด
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-4">
-                ดาวน์โหลดคู่มือ PDF
+              <Button size="lg" variant="outline" className="text-lg px-8 py-4" asChild>
+                <a href="https://lin.ee/rQIBIYa" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  คุยกับทีมทาง LINE
+                </a>
               </Button>
             </div>
           </div>

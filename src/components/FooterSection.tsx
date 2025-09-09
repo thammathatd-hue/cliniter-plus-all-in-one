@@ -14,13 +14,17 @@ const FooterSection = () => {
             มากกว่า 100 คลินิกเลือกใช้ Cliniter Plus เพื่อเพิ่มประสิทธิภาพและรายได้
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="cta" className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/90">
-              <Phone className="w-5 h-5 mr-2" />
-              ขอนัดเดโม่ฟรี
+            <Button size="lg" variant="cta" className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/90" asChild>
+              <a href="tel:099-264-4446">
+                <Phone className="w-5 h-5 mr-2" />
+                ขอนัดเดโม่ฟรี
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white/10">
-              <MessageCircle className="w-5 h-5 mr-2" />
-              คุยกับทีมทาง LINE
+            <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white/10" asChild>
+              <a href="https://lin.ee/rQIBIYa" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-5 h-5 mr-2" />
+                คุยกับทีมทาง LINE
+              </a>
             </Button>
           </div>
         </div>
@@ -86,7 +90,7 @@ const FooterSection = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-4 h-4 text-primary" />
-                  <span className="text-sm text-background/70">02-123-4567</span>
+                  <span className="text-sm text-background/70">099-264-4446</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-4 h-4 text-primary" />
@@ -94,7 +98,7 @@ const FooterSection = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <MessageCircle className="w-4 h-4 text-primary" />
-                  <span className="text-sm text-background/70">@cliniterplus</span>
+                  <span className="text-sm text-background/70">@cliniter</span>
                 </div>
               </div>
 
