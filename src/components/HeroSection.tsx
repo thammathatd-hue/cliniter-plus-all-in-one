@@ -16,13 +16,6 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <div className="flex items-center space-x-4 mb-4">
-                <img 
-                  src="/lovable-uploads/fbf5ef50-39aa-4d0a-9c28-02bb91cd185e.png" 
-                  alt="Cliniter Plus Logo" 
-                  className="h-16 md:h-20 w-auto"
-                />
-              </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 <br />
                 <span className="text-3xl md:text-4xl lg:text-5xl">
