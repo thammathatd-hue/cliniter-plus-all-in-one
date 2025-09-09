@@ -66,9 +66,8 @@ const BenefitsSection = () => {
 
   return (
     <section className="py-16 bg-section-clean relative overflow-hidden">
-      {/* Minimal decorative elements */}
-      <div className="absolute top-16 right-20 w-36 h-36 bg-gradient-primary rounded-full opacity-5 animate-float" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute bottom-24 left-8 w-28 h-28 bg-gradient-secondary rounded-lg rotate-12 opacity-4 animate-pulse-glow"></div>
+      {/* Ultra minimal decorative elements */}
+      <div className="absolute top-16 right-20 w-36 h-36 bg-gradient-primary rounded-full opacity-1 animate-float" style={{ animationDelay: '1s' }}></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">

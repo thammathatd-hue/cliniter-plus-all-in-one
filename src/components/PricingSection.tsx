@@ -85,9 +85,9 @@ const PricingSection = () => {
 
   return (
     <section id="pricing" className="py-16 bg-pricing-pattern relative overflow-hidden">
-      {/* Clean background elements */}
-      <div className="absolute top-40 left-8 w-24 h-24 bg-gradient-primary rounded-full opacity-8 animate-float"></div>
-      <div className="absolute bottom-32 right-12 w-32 h-32 bg-gradient-secondary rounded-lg rotate-45 opacity-6 animate-pulse-glow"></div>
+      {/* Minimal background elements */}
+      <div className="absolute top-40 left-8 w-24 h-24 bg-gradient-primary rounded-full opacity-2 animate-float"></div>
+      <div className="absolute bottom-32 right-12 w-32 h-32 bg-gradient-secondary rounded-lg rotate-45 opacity-1 animate-pulse-glow"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
