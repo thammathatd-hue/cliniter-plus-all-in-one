@@ -90,10 +90,10 @@ export default {
         'premium': 'var(--shadow-premium)',
       },
       fontFamily: {
-        'thai': ['Noto Sans Thai', 'Sarabun', 'sans-serif'],
-        'sarabun': ['Sarabun', 'Noto Sans Thai', 'sans-serif'],
-        'luxury': ['Playfair Display', 'Georgia', 'serif'],
-        'premium': ['Inter', 'system-ui', 'sans-serif'],
+        'kanit': ['Kanit', 'system-ui', 'sans-serif'],
+        'inter': ['Inter', 'system-ui', 'sans-serif'],
+        'medical': ['Kanit', 'Inter', 'system-ui', 'sans-serif'],
+        'primary': ['Kanit', 'system-ui', 'sans-serif'],
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',

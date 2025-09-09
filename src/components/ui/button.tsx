@@ -9,15 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-luxury transition-luxury font-premium font-semibold",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-luxury transition-luxury font-premium",
-        outline: "border-3 border-primary bg-background/95 text-primary hover:bg-primary hover:text-primary-foreground shadow-luxury transition-luxury font-premium font-bold backdrop-blur-sm",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-luxury transition-luxury font-premium font-semibold",
-        ghost: "hover:bg-accent hover:text-accent-foreground transition-luxury font-premium",
-        link: "text-primary underline-offset-4 hover:underline transition-luxury font-premium",
-        cta: "bg-gradient-primary text-primary-foreground hover:shadow-glow transform hover:scale-105 hover:shadow-excellence transition-excellence font-premium font-bold shadow-luxury",
-        hero: "bg-gradient-accent text-white hover:shadow-glow transform hover:scale-105 hover:shadow-excellence transition-excellence font-premium font-bold shadow-premium",
-        medical: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-luxury transition-luxury font-premium font-medium",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-luxury transition-luxury font-kanit font-semibold",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-luxury transition-luxury font-kanit",
+        outline: "border-3 border-primary bg-background/95 text-primary hover:bg-primary hover:text-primary-foreground shadow-luxury transition-luxury font-kanit font-bold backdrop-blur-sm",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-luxury transition-luxury font-kanit font-semibold",
+        ghost: "hover:bg-accent hover:text-accent-foreground transition-luxury font-kanit",
+        link: "text-primary underline-offset-4 hover:underline transition-luxury font-kanit",
+        cta: "bg-gradient-primary text-primary-foreground hover:shadow-glow transform hover:scale-105 hover:shadow-excellence transition-excellence font-kanit font-bold shadow-luxury",
+        hero: "bg-gradient-accent text-white hover:shadow-glow transform hover:scale-105 hover:shadow-excellence transition-excellence font-kanit font-bold shadow-premium",
+        medical: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-luxury transition-luxury font-kanit font-medium",
       },
       size: {
         default: "h-12 px-6 py-3",
