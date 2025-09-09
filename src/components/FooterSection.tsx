@@ -32,11 +32,12 @@ const FooterSection = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="space-y-6">
-              <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">C+</span>
-                </div>
-                <span className="font-bold text-xl">Cliniter Plus</span>
+              <div className="flex items-center space-x-3">
+                <img 
+                  src="/lovable-uploads/fbf5ef50-39aa-4d0a-9c28-02bb91cd185e.png" 
+                  alt="Cliniter Plus Logo" 
+                  className="h-10 w-auto"
+                />
               </div>
               <p className="text-background/70 leading-relaxed">
                 ระบบจัดการคลินิกออนไลน์ครบวงจร ที่ช่วยให้คลินิกของคุณทำงานได้อย่างมีประสิทธิภาพ
