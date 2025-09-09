@@ -75,14 +75,60 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Content - Dashboard Image */}
+          {/* Right Content - Multi-Device Dashboard */}
           <div className="relative">
-            <div className="relative z-10">
-              <img
-                src={heroDashboard}
-                alt="Cliniter Plus Dashboard - ระบบจัดการคลินิกออนไลน์"
-                className="w-full h-auto rounded-2xl shadow-glow border border-border/20"
-              />
+            {/* Desktop Monitor */}
+            <div className="relative z-10 mb-8">
+              <div className="bg-gray-800 rounded-t-2xl p-2 shadow-2xl">
+                <div className="bg-gray-700 rounded-lg p-1 mb-2">
+                  <div className="flex space-x-1">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  </div>
+                </div>
+                <img
+                  src="/lovable-uploads/b5a49245-03fa-48df-b302-6c51acf3f2e1.png"
+                  alt="Cliniter Plus Dashboard - Desktop View"
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="bg-gray-800 h-6 rounded-b-2xl shadow-2xl relative">
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-2 bg-gray-600 rounded-t-lg"></div>
+              </div>
+            </div>
+
+            {/* Tablet and Mobile */}
+            <div className="flex justify-center space-x-8 relative z-5">
+              {/* Tablet */}
+              <div className="transform rotate-12 -mt-16">
+                <div className="bg-gray-800 rounded-2xl p-3 shadow-xl w-48">
+                  <img
+                    src="/lovable-uploads/b5a49245-03fa-48df-b302-6c51acf3f2e1.png"
+                    alt="Cliniter Plus Dashboard - Tablet View"
+                    className="w-full h-auto rounded-lg"
+                  />
+                  <div className="flex justify-center mt-2">
+                    <div className="w-8 h-8 bg-gray-600 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile */}
+              <div className="transform -rotate-6 -mt-8">
+                <div className="bg-gray-800 rounded-3xl p-2 shadow-xl w-24">
+                  <div className="bg-black rounded-2xl overflow-hidden">
+                    <div className="bg-gray-900 h-4 rounded-t-2xl flex justify-center items-center">
+                      <div className="w-8 h-1 bg-gray-600 rounded-full"></div>
+                    </div>
+                    <img
+                      src="/lovable-uploads/b5a49245-03fa-48df-b302-6c51acf3f2e1.png"
+                      alt="Cliniter Plus Dashboard - Mobile View"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
             
             {/* Floating Elements */}
