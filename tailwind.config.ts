@@ -84,13 +84,16 @@ export default {
         'gradient-clean': 'var(--gradient-clean)',
       },
       boxShadow: {
-        'medical': 'var(--shadow-medical)',
+        'luxury': 'var(--shadow-luxury)',
         'card': 'var(--shadow-card)',
         'glow': 'var(--shadow-glow)',
+        'premium': 'var(--shadow-premium)',
       },
       fontFamily: {
         'thai': ['Noto Sans Thai', 'Sarabun', 'sans-serif'],
         'sarabun': ['Sarabun', 'Noto Sans Thai', 'sans-serif'],
+        'luxury': ['Playfair Display', 'Georgia', 'serif'],
+        'premium': ['Inter', 'system-ui', 'sans-serif'],
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',

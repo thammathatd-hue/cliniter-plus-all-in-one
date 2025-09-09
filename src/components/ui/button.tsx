@@ -9,15 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-medical transition-smooth",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground shadow-card transition-smooth font-semibold",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-card transition-smooth",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        cta: "bg-gradient-accent text-white hover:shadow-glow transform hover:scale-105 transition-bounce font-semibold shadow-medical",
-        hero: "bg-gradient-primary text-white hover:shadow-glow transform hover:scale-105 transition-bounce font-semibold shadow-medical",
-        medical: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-medical transition-smooth",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-luxury transition-all duration-300 font-premium",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-luxury transition-all duration-300",
+        outline: "border-2 border-primary bg-background/80 text-primary hover:bg-primary hover:text-primary-foreground shadow-luxury transition-all duration-300 font-premium font-semibold backdrop-blur-sm",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-luxury transition-all duration-300 font-premium",
+        ghost: "hover:bg-accent hover:text-accent-foreground transition-all duration-300",
+        link: "text-primary underline-offset-4 hover:underline transition-all duration-300",
+        cta: "bg-gradient-primary text-primary-foreground hover:shadow-glow transform hover:scale-105 transition-all duration-300 font-premium font-bold shadow-luxury",
+        hero: "bg-gradient-accent text-white hover:shadow-glow transform hover:scale-105 transition-all duration-300 font-premium font-bold shadow-premium",
+        medical: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-luxury transition-all duration-300 font-premium",
       },
       size: {
         default: "h-10 px-4 py-2",
